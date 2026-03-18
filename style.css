@@ -1,0 +1,103 @@
+:root {
+    --primary-bg: #064e3b;
+    --gold: #f59e0b;
+    --glass: rgba(255, 255, 255, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hidden { display: none; }
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--gold);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.input-box { text-align: left; margin-bottom: 15px; }
+
+label { color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-left: 5px; }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    margin-top: 5px;
+}
+
+.row { display: flex; gap: 10px; }
+
+.btn-calculate {
+    width: 100%;
+    padding: 15px;
+    background: var(--gold);
+    border: none;
+    border-radius: 12px;
+    color: #064e3b;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-calculate:hover { transform: scale(1.02); }
+
+/* Result UI Styles */
+.salami-display { font-size: 4rem; font-weight: 800; color: var(--gold); margin: 10px 0; }
+
+.message-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    border-top: 4px solid var(--gold);
+    text-align: center;
+}
+
+/* বড় এবং বোল্ড সালামের স্টাইল */
+.salam-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bkash-badge { font-size: 0.85rem; color: #99f6e4; margin-bottom: 20px; }
+
+.btn-back { background: none; border: 1px solid white; color: white; padding: 10px 20px; border-radius: 10px; cursor: pointer; }
+
+.fade-in { animation: fadeIn 0.6s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
