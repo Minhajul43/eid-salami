@@ -12,7 +12,7 @@ document.getElementById('salamiForm').addEventListener('submit', function(e) {
     let ageDiff = 24 - age;
     if (ageDiff <= 0) ageDiff = 2; // বড়দের জন্য ফিক্সড সম্মানসূচক ভ্যালু
 
-    // ৩. টোটাল সালামি (১০০ দিয়ে গুন করে বাস্তবসম্মত করা হয়েছে)
+    // ৩. টোটাল সালামি (১০ দিয়ে গুন করে বাস্তবসম্মত করা হয়েছে)
     let finalSalami = (gpa * ageDiff * 10).toFixed(0);
 
     // ৪. ইউআই পরিবর্তন
